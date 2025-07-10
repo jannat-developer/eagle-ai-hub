@@ -47,7 +47,7 @@ export default function AiToolsPage() {
           <div
             key={idx}
             className={` p-6  transition relative group ${idx === 1 || idx === 3
-                ? ''
+                ? 'border border-blue-500 shadow-[0_0_20px_2px_rgba(0,153,255,0.4)]'
                 : ''
               }`}
           >
@@ -82,8 +82,6 @@ export default function AiToolsPage() {
         <PopupModal
           isOpen={isOpen}
           onClose={() => setIsOpen(false)}
-          title={selectedTool.title}
-          description={selectedTool.description}
         />
       )}
     </section>

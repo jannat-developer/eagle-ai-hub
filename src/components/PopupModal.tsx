@@ -5,20 +5,46 @@ import React from 'react';
 type PopupModalProps = {
   isOpen: boolean;
   onClose: () => void;
-  title: string;
-  description: string;
 };
 
 export default function PopupModal({
   isOpen,
   onClose,
-  title,
-  description,
 }: PopupModalProps) {
   if (!isOpen) return null;
 
+  const tools = [
+    {
+      title: 'DM Automation Bot',
+      description: 'Auto-reply and follow up in DMs while you sleep',
+    },
+    {
+      title: 'Social Video Splitter Bot',
+      description: 'Chop long video into Tik-Tok ready reels',
+    },
+    {
+      title: 'Bio Link Page Builder',
+      description: 'Auto-reply and follow up in DMs while you sleep',
+    },
+    {
+      title: 'Social Video Splitter Bot',
+      description: 'Chop long video into Tik-Tok ready reels',
+    },
+    {
+      title: 'Outreach Blast Bot',
+      description: 'Auto-reply and follow up in DMs while you sleep',
+    },
+    {
+      title: 'Affiliate Earnings Tracker',
+      description: 'Chop long video into Tik-Tok ready reels',
+    },
+  ];
+
+  // Pick a specific tool, e.g., first one for demo
+  const tool = tools[0]; // You can replace 0 with a dynamic index if needed
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-60">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-60 ">
       <div className="bg-gray-900 text-white p-6 rounded-xl w-full max-w-md shadow-lg relative">
         <button
           onClick={onClose}
@@ -26,14 +52,20 @@ export default function PopupModal({
         >
           &times;
         </button>
-        <h2 className="text-2xl font-semibold mb-4">{title}</h2>
-        <p className="text-gray-300">{description}</p>
-        <div className="mt-6 text-right">
+        <h2 className="text-2xl font-semibold mb-4">{tool.title}</h2>
+        <p className="text-gray-300">{tool.description}</p>
+        <div className="flex mt-6 text-center gap-4">
           <button
             onClick={onClose}
-            className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded"
+            className="px-4 py-2 bg-white text-[#4B4B4B] rounded"
           >
-            Close
+            Cancel
+          </button>
+          <button
+            onClick={onClose}
+            className="px-4 py-2 bg-[#D10800] text-white rounded"
+          >
+            Let me Try
           </button>
         </div>
       </div>
