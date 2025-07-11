@@ -23,7 +23,7 @@ const AboutPage = () => {
                 zIndex: 0,
             }} />
             {/* Hero Section */}
-            <header className="">
+            <header className="max-w-[1920px]">
                 <h1 className="text-4xl md:text-5xl max-w-4xl mx-auto font-normal mb-6 leading-tight text-center">
                     They Laughed When We Started. Now They’re Asking for Access.
                 </h1>
