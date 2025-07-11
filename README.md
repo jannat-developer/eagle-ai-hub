@@ -16,21 +16,31 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start from `app/page.tsx`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+📄 Popup Modal Task Documentation
+------------------------------------------------------------------------------------
+✅ Objective
+Design and implement a reusable popup modal in a Next.js + Tailwind CSS project that:
+1. Investor Form
+2. Automate Everything with AI Bots
+3. PopUp
 
-To learn more about Next.js, take a look at the following resources:
+Code explaination:
+I have created a route named "eagle-opopup" and several components. You can access all the components from "eagle-popup/page.tsx" 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+UI Explaination: At the home page there is a button "Opn Eagle Popup" . Clicking this button you will go to the "eagle-opopup" route.
+1. Investor Form
+2. AiTool page - Automate Everything with AI Bots .There is a "Explore" button. Clicking this you will get demo Popup
+3. PopUp: Bottom of the page there is four button . Clicking them you will get all the four Popups. Can display dynamic title, description, and button text
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+GITHUB Link: https://github.com/jannat-developer/eagle-ai-hub
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+To run the code:
+git clone 'github link'
+npm i
+npm run dev
