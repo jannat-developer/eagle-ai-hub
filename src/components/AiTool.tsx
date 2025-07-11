@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 const tools = [
   {
-    title: 'DM Automation Bot',
-    description: 'Auto-reply and follow up in DMs while you sleep',
+    title: 'Want to earn $100 for trying an AI tool?',
+    description: 'If you cancel now, your progress will be deleted, and you will have to start over.',
   },
   {
     title: 'Social Video Splitter Bot',
@@ -47,10 +47,11 @@ export default function AiToolsPage() {
           <div
             key={idx}
             className={` p-6  transition relative group ${idx === 1 || idx === 3
-                ? 'border border-blue-500 shadow-[0_0_20px_2px_rgba(0,153,255,0.4)]'
+                ? ' '
                 : ''
               }`}
           >
+            {/* shadow-[0_0_20px_2px_rgba(0,153,255,0.4)] */}
             
             <Image
               src="/images/ai-tool.png" 

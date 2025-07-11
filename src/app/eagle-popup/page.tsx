@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import InvestorForm from '@/components/InvestorForm';
 import AiToolsPage from '@/components/AiTool';
+import AllPopupButtons from '@/components/AllPopupButtons';
 
 export default function EaglePopUp() {
 
@@ -10,6 +11,7 @@ export default function EaglePopUp() {
     <div>
         <InvestorForm></InvestorForm>
         <AiToolsPage></AiToolsPage>
+        <AllPopupButtons></AllPopupButtons>
     </div>
   );
 }
