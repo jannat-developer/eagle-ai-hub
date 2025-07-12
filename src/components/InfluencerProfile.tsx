@@ -56,7 +56,7 @@ const InfluencerProfile = () => {
                 </div>
 
                 {/* right */}
-                <div className=" md:w-1/2 bg-black flex flex-col items-center justify-center text-white border border-[#D10800] rounded-[30px] px-3 mx-4">
+                <div className=" md:w-1/2 bg-black flex flex-col items-center justify-center text-white border border-[#D10800] rounded-[30px] px-[1px] mx-4">
                     <div className="h-[120px] w-full bg-[#0c2014] rounded-t-[30px]"></div>
                     <div className="py-10 text-center">
                         <div className='bg-white p-2 rounded-full -mt-30 w-fit mx-auto'>
