@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import PopupModal from '@/components/PopupModal'; // ✅ update path if needed
-import Image from 'next/image';
+import { BsImages } from 'react-icons/bs';
 
 const tools = [
     {
@@ -38,14 +37,19 @@ export default function TopGiveaways() {
                             }`}
                     >
                         {/* shadow-[0_0_20px_2px_rgba(0,153,255,0.4)] */}
-
+{/* 
                         <Image
                             src="/images/ai-tool.png"
                             alt="Description of image"
                             width={50}
                             height={50}
                             className='rounded-[10px] mb-3'
-                        />
+                        /> */}
+
+                        <div className='bg-white rounded-[10px] p-4 w-fit mb-3'>
+                               <BsImages className='text-gray-700 text-4xl' />
+                        </div>
+                     
 
                         {/* Title */}
                         <h3 className="text-[1.3rem] font-semibold mb-2">{tool.title}</h3>
