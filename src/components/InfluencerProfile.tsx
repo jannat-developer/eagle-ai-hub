@@ -21,27 +21,27 @@ const InfluencerProfile = () => {
     const links: LinkItem[] = [
         {
             text: 'Visit my portfolio',
-            icon: '🧑‍💻',
+            icon: '/images/profile-icons/laptop.png',
             href: '#',
         },
         {
             text: 'Read my articles',
-            icon: '📝',
+            icon: '/images/profile-icons/read.png',
             href: '#',
         },
         {
             text: 'Listen my podcast',
-            icon: '🎙️',
+            icon: '/images/profile-icons/mic.png',
             href: '#',
         },
         {
             text: 'Visit my store',
-            icon: '🛍️',
+            icon: '/images/profile-icons/bag.png',
             href: '#',
         },
         {
             text: 'Subscribe to my channel',
-            icon: '🎥',
+            icon: '/images/profile-icons/cam.png',
             href: '#',
         },
     ];
@@ -89,7 +89,8 @@ const InfluencerProfile = () => {
                                         }`}
                                 >
                                     <span className="flex items-center gap-2">
-                                        <span className="text-[1rem] font-bold">{link.icon}</span>
+                                        {/* <span className="text-[1rem] font-bold">{link.icon}</span> */}
+                                        <img src={link.icon} alt="" />
                                         {link.text}
                                     </span>
                                     <span
