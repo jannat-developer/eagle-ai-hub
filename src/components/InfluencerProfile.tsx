@@ -56,100 +56,78 @@ const InfluencerProfile = () => {
     ];
 
     return (
-        <div className="bg-black min-h-screen">
-            <div className="flex flex-col md:flex-row max-w-[1680px] mx-auto gap-4">
-                {/* left */}
-                <div className="w-full md:w-1/2 bg-pink-700 flex items-center justify-center">
-                    <h1 className="text-white text-3xl">Hello</h1>
-                </div>
-
-                {/* right */}
-                <div className="md:w-1/2 bg-black flex flex-col items-center justify-center text-white border border-[#D10800] rounded-[30px] px-[1px] mx-4">
-                    <div className="relative h-[120px] w-full rounded-t-[30px] overflow-hidden">
-                        {/* Background Image */}
-                        <div
-                            className="absolute inset-0 bg-cover bg-center z-0"
-                            style={{
-                                backgroundImage: "url('/images/proile-bg.jpg')",
-                            }}
-                        ></div>
-
-                        {/* Overlay */}
-                        <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-
-                        {/* Foreground */}
-                        <div className="relative z-20 bg-[#0c2014] h-full w-full rounded-t-[30px]"></div>
-                    </div>
-
-                    <div className="py-10 text-center z-20">
-                        <div className="bg-white p-2 rounded-full -mt-30 w-fit mx-auto">
-                            <Image
-                                src="/images/profile.jpg"
-                                alt="profile"
-                                width={160}
-                                height={160}
-                                className="rounded-full object-cover"
-                            />
-                        </div>
-                        <h1 className="text-[1.8rem] font-bold my-2">John Carter</h1>
-                        <p className="text-[1rem] font-normal px-6 lg:px-0">
-                            Aliquam ut vitae vitae enim viverra luctus sollicitudin <br /> aliquam
-                            itae pulvinar vestibulum dict at ipsum.
-                        </p>
-
-                        {/* Social Icons */}
-                        <div className="flex justify-center items-center gap-4 mt-10 text-2xl">
-                            <a href="#" aria-label="Facebook">
-                                <FaFacebookF className="text-blue-500 transition" />
-                            </a>
-                            <a href="#" aria-label="Twitter">
-                                <FaTwitter className="text-sky-400 transition" />
-                            </a>
-                            <a href="#" aria-label="Instagram">
-                                <FaInstagram className="text-pink-500 transition" />
-                            </a>
-                            <a href="#" aria-label="LinkedIn">
-                                <FaLinkedinIn className="text-blue-700 transition" />
-                            </a>
-                            <a href="#" aria-label="YouTube">
-                                <FaYoutube className="text-red-600 transition" />
-                            </a>
-                        </div>
-
-
-                        {/* Link Buttons */}
-                        <div className="flex flex-col gap-3 w-full  pt-20 pb-10 px-6 lg:px-0">
-                            {links.map((link, index) => {
-                                const Icon = link.icon;
-                                return (
-                                    <a
-                                        key={index}
-                                        href={link.href}
-                                        className={`group flex items-center justify-between rounded-full px-5 py-2 text-sm font-medium transition-colors duration-300 ${link.highlight
-                                            ? 'bg-[#0c1120] text-white'
-                                            : 'bg-white text-[#030B1A] hover:bg-[#030B1A] hover:text-white'
-                                            }`}
-                                    >
-                                        <span className="flex items-center gap-2">
-                                            <Icon className="text-[1rem]" />
-                                            {link.text}
-                                        </span>
-                                        <span
-                                            className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-300 ${link.highlight
-                                                ? 'bg-[#EFF2F6] text-[#030B1A]'
-                                                : 'bg-gray-100 group-hover:bg-white group-hover:text-[#030B1A]'
-                                                }`}
-                                        >
-                                            <ArrowUpRight className="w-5 h-5" />
-                                        </span>
-                                    </a>
-                                );
-                            })}
-                        </div>
-                    </div>
-                </div>
-            </div>
+       <div className="bg-black min-h-screen px-4 py-8">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
+        {/* LEFT PANEL */}
+        <div className="w-full lg:w-1/2 bg-pink-700 rounded-2xl flex items-center justify-center p-6">
+          <h1 className="text-white text-3xl font-bold">Hello</h1>
         </div>
+
+        {/* RIGHT PANEL */}
+        <div className="w-full lg:w-1/2 bg-[#070A10] border border-[#D10800] rounded-[30px] overflow-hidden flex flex-col  px-[1px]">
+          {/* Header Banner */}
+          <div className="relative h-32 w-full">
+            <div
+              className="absolute inset-0 bg-cover bg-center "
+              style={{
+                backgroundImage: "url('/images/proile-bg.jpg')",
+              }}
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-50" />
+            <div className="absolute inset-0 bg-[#0c2014] rounded-t-[30px] z-10" />
+          </div>
+
+          {/* Profile Section */}
+          <div className="relative z-20 flex flex-col items-center text-center p-6 sm:p-10">
+            <div className="-mt-20 bg-white p-2 rounded-full shadow-md">
+              <Image
+                src="/images/profile.jpg"
+                alt="profile"
+                width={120}
+                height={120}
+                className="rounded-full object-cover"
+              />
+            </div>
+            <h1 className="text-2xl sm:text-[1.8rem] text-white font-bold mt-4">John Carter</h1>
+            <p className="text-sm sm:text-base text-gray-300 mt-2 leading-relaxed max-w-md">
+              Aliquam ut vitae vitae enim viverra luctus sollicitudin <br className="hidden sm:block" /> 
+              aliquam vitae pulvinar vestibulum dict at ipsum.
+            </p>
+
+            {/* Social Icons */}
+            <div className="flex justify-center items-center gap-4 mt-6 text-xl">
+              <FaFacebookF className="text-blue-500" />
+              <FaTwitter className="text-sky-400" />
+              <FaInstagram className="text-pink-500" />
+              <FaLinkedinIn className="text-blue-700" />
+              <FaYoutube className="text-red-600" />
+            </div>
+
+            {/* Links */}
+            <div className="flex flex-col gap-3 w-full pt-10 pb-6">
+              {links.map((link, index) => {
+                const Icon = link.icon;
+                return (
+                  <a
+                    key={index}
+                    href={link.href}
+                    className="group flex items-center justify-between bg-white text-[#030B1A] hover:bg-[#030B1A] hover:text-white transition-all rounded-full px-5 py-3 text-sm font-medium"
+                  >
+                    <span className="flex items-center gap-2">
+                      <Icon className="text-base" />
+                      {link.text}
+                    </span>
+                    <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-white group-hover:text-[#030B1A]">
+                      <ArrowUpRight className="w-4 h-4" />
+                    </span>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     );
 };
 
