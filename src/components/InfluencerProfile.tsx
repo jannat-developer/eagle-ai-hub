@@ -69,7 +69,7 @@ const InfluencerProfile = () => {
                             />
                         </div>
                         <h1 className='text-[1.8rem] font-bold my-2'>John Carter</h1>
-                        <p className='text-[1rem] font-normal px-3 md:px-0'>Aliquam ut vitae vitae enim viverra luctus sollicitudin <br /> aliquam itae pulvinar vestibulum dict at ipsum.</p>
+                        <p className='text-[1rem] font-normal px-6 md:px-0'>Aliquam ut vitae vitae enim viverra luctus sollicitudin <br /> aliquam itae pulvinar vestibulum dict at ipsum.</p>
                         <div className='flex justify-center items-center gap-2 mt-10'>
                             <img src="/images/icons/Facebook.png" alt="" />
                             <img src="/images/icons/Twitter.png" alt="" />
@@ -77,7 +77,7 @@ const InfluencerProfile = () => {
                             <img src="/images/icons/LinkedIn.png" alt="" />
                             <img src="/images/icons/Youtube.png" alt="" />
                         </div>
-                        <div className="flex flex-col gap-3 w-full max-w-xl pt-20 pb-10 px-3 md:px-0">
+                        <div className="flex flex-col gap-3 w-full max-w-xl pt-20 pb-10 px-6 md:px-0">
                             {links.map((link, index) => (
                                 
                                 <a
