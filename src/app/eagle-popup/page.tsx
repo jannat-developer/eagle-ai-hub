@@ -7,6 +7,7 @@ import AllPopupButtons from '@/components/AllPopupButtons';
 // import AboutDemo from '@/components/AboutDemo';
 import AboutGpt from '@/components/AboutGpt';
 import AboutPage from '@/components/AboutPage';
+import InfluencerProfile from '@/components/InfluencerProfile';
 
 export default function EaglePopUp() {
 
@@ -16,8 +17,7 @@ export default function EaglePopUp() {
         <AiToolsPage></AiToolsPage>
         <AllPopupButtons></AllPopupButtons>
         <AboutPage></AboutPage>
-        {/* <AboutGpt></AboutGpt> */}
-        {/* <AboutDemo></AboutDemo> */}
+        <InfluencerProfile></InfluencerProfile>
     </div>
   );
 }
