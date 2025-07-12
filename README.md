@@ -38,7 +38,7 @@ UI Explaination: At the home page there is a button "Opn Eagle Popup" . Clicking
 
 
 12/7/2025 ----- 11:06 AM
-Check "InfluencerProfile.tsx"
+In code: Check "InfluencerProfile.tsx"
 
 In UI: It is in the botttom of the page
 

@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 import InvestorForm from '@/components/InvestorForm';
 import AiToolsPage from '@/components/AiTool';
 import AllPopupButtons from '@/components/AllPopupButtons';
-// import AboutDemo from '@/components/AboutDemo';
-import AboutGpt from '@/components/AboutGpt';
 import AboutPage from '@/components/AboutPage';
 import InfluencerProfile from '@/components/InfluencerProfile';
+import AffiliantLink from '@/components/AffiliantLink';
+import TopGiveaways from '@/components/TopGiveaways';
+import Demo from '@/components/Demo';
 
 export default function EaglePopUp() {
 
@@ -18,6 +19,9 @@ export default function EaglePopUp() {
         <AllPopupButtons></AllPopupButtons>
         <AboutPage></AboutPage>
         <InfluencerProfile></InfluencerProfile>
+        <AffiliantLink></AffiliantLink>
+        <TopGiveaways></TopGiveaways>
+        <Demo></Demo>
     </div>
   );
 }
