@@ -21,7 +21,7 @@ export default function EaglePopUp() {
         <InfluencerProfile></InfluencerProfile>
         <AffiliantLink></AffiliantLink>
         <TopGiveaways></TopGiveaways>
-        <Demo></Demo>
+        {/* <Demo></Demo> */}
     </div>
   );
 }
